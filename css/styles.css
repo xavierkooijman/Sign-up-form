@@ -29,7 +29,7 @@ img{
 
 h2{
   font-family: "Caesar Dressing";
-  font-size: 4rem;
+  font-size: clamp(3rem, 5vw, 4rem);
   color: white;
   margin-bottom: 0.5em;
   text-align: center;
@@ -41,7 +41,7 @@ h2{
 }
 
 form{
-  width: 50%;
+  width: 50%
 }
 
 input,button{
@@ -69,7 +69,7 @@ button{
 }
 
 h1{
-  font-size: clamp(1rem, 4.5vw, 4rem);
+  font-size: clamp(3rem, 4.5vw, 4rem);
   width: 50%;
 }
 
@@ -94,6 +94,16 @@ form{
 
 @media only screen and (max-width: 1080px) {
   .pageContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .formInputs{
     display: flex;
     flex-direction: column;
   }
